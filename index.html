@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+  </head>
+  <body>
+     <h1 id="title">Survey Form</h1>
+     <p id="description">Please fill out this form</p>
+     <form id="survey-form">
+       <fieldset>
+         <label id="name-label" for="name">Name <input type="text" id="name" placeholder="Enter Your Name" required></label>
+         <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter Your Email" required></label>
+         <label id="number-label" for="number">Age <input type="number" id="number" min="12" max="50" placeholder="Age"></label>
+       </fieldset>
+       <fieldset>
+         <label for="dropdown">What game is your favourite?
+           <select id="dropdown">
+             <option value=""> Select a game</option>
+             <option value="1">Fortnite</option>
+             <option value="2">God of War</option>
+             <option value="3">Overwatch</option>
+             <option value="4">Valorant</option>
+             <option value="5">Genshin Impact</option>
+           </select>
+         </label>
+       </fieldset>
+       <fieldset>
+         <legend>Are you sure about your choice?</legend>
+         <label for="yes"><input type="radio" id="yes" name="choice" value="yes"> Yes<label>
+           <label for="no"><input type="radio" id="no" name="choice" value="no"> No</label>
+           <label for="unsure"><input type="radio" id="unsure" name="choice" value="unsure"> Conflicted</label>
+       </fieldset>
+       <fieldset>
+         <label for="genre">Which genre does your preferred game fit in?
+           <select id="genre">
+             <option value="">Select a genre</option>
+             <option value="shoot">Shooter</option>
+             <option value="fpsshoot">FPS Shooter</option>
+             <option value="rpg">RPG</option>
+             <option value="mmorpg">MMORPG</option>
+             <option value="horror">Horror</option>
+           </select>
+         </label>
+           <label class="like">Why do you like this game? (check all that may apply)</label>
+           <label for="combat"><input type="checkbox" id="combat" value="combat"> Combat</label>
+           <label for="mechanics"><input type="checkbox" id="mechanics" value="mechanics"> Mechanics</label>
+           <label for="music"><input type="checkbox" id="music" value="music"> Music</label>
+           <label for="story"><input type="checkbox" id="story" value="story"> Story</label>
+           <label for="control"><input type="checkbox" id="control" value="control"> Fun Controls</label>
+           <label for="graphics"><input type="checkbox" id="graphics" value="graphics"> Graphics</label>
+           <label for="artstyle"><input type="checkbox" id="artstyle" value="artstyle"> Artstyle</label>
+           <label for="reasoning" class="area">Explain what got you into the game: 
+             <textarea rows='8' cols="30" placeholder="I started playing..."></textarea>
+           </label>
+       </fieldset>
+       <button type="submit" id="submit">Submit</button>
+     </form>
+  </body>
+</html>
